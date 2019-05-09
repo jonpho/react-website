@@ -1,3 +1,9 @@
+## Homepage React Conversion Project
+Currently, my original homepage is being converted into a react app for learning purposes. Feel free to follow the progress. I started by using the Create React App and then started ported some of the code over.
+
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
