@@ -3,17 +3,18 @@ import './App.css';
 import About from './components/About';
 import Navigation from './components/Navigation';
 import Footer from "./components/Footer";
+import Jumbotron from "./components/Jumbotron";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <Navigation />
-      </header>
-      <body>
-        <About />
-      </body>
       <div>
+          <Jumbotron />
+      </div>
+      <div className="section">
+        <About />
+      </div>
+      <div className="section">
         <Footer />
       </div>
     </div>

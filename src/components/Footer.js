@@ -9,13 +9,15 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <footer className="section-footer">
-        <div className="wrap row">
-          <div className="small-12 medium-3 columns">
-            <p>Copyright {this.currentYear()}</p>
+      <div className="section-footer text-left">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <p>Copyright {this.currentYear()}</p>
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
     );
   }
 }
