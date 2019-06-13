@@ -9,7 +9,10 @@ function App() {
   return (
     <div className="App">
       <div>
-          <Jumbotron />
+        <Navigation />
+      </div>
+      <div>
+        <Jumbotron />
       </div>
       <div className="section">
         <About />
