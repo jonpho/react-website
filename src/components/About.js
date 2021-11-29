@@ -7,7 +7,7 @@ class About extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-8">
-            <h2>Welcome</h2>
+            <h2 className="text-center">Welcome</h2>
             <p className="text-left">Hello! My name is Jonathan Pho. I'm a Software Engineer in Test with over 10 years
               of experience in managing and planning QA teams. I have an extensive background in automated testing and
               manual testing. Along with my background in testing, I have a proven track record of building, managing,
