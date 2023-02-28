@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import About from './components/About';
-import Navigation from './components/Navigation';
 import Footer from "./components/Footer";
 import Jumbotron from "./components/Jumbotron";
+import Navigation from "./components/Navigation"
 
 function App() {
   return (

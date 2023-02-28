@@ -18,9 +18,6 @@ class About extends React.Component {
               recent years coding has been a big part of my career and my goals. It's a great skill to have and I hope
               to branch into more software engineering in the future.
             </p>
-            <p className="text-left">The tech stack of this site is currently created from React with Bootstrap. My goal
-              is to add more backend work to this site but that is a work in progress.
-            </p>
           </div>
           <div className="col-4">
             <img className="img-thumbnail" alt="profile" src={headShot} />

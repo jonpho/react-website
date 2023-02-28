@@ -1,34 +1,34 @@
-import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-class Navigation extends React.Component {
-  render() {
+function Navigation() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a className="navbar-brand" href="/index.html">Jonathan Pho</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="/index.html">Home <span className="sr-only">(current)</span></a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="/index.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media</a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="https://github.com/jonpho">GitHub</a>
-                <a className="dropdown-item" href="https://www.linkedin.com/in/jonpho">LinkedIN</a>
-                <a className="dropdown-item" href="https://www.facebook.com/jonpho">Facebook</a>
-                <a className="dropdown-item" href="https://twitter.com/jonathanpho">Twitter</a>
-                <a className="dropdown-item" href="https://www.instagram.com/leftphodead/">Instagram</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <Navbar varient="dark" expand="lg">
+            <Container fluid>
+                <Navbar.Brand href="#">Jonathan Pho</Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav
+                        className="me-auto my-2 my-lg-0"
+                        style={{ maxHeight: '100px' }}
+                        navbarScroll
+                    >
+                        <Nav.Link href="#action1">Home</Nav.Link>
+                        <NavDropdown title="Social Media" id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="https://github.com/jonpho">GitHub</NavDropdown.Item>
+                            <NavDropdown.Item href="https://www.linkedin.com/in/jonpho">LinkedIN</NavDropdown.Item>
+                            {/*<NavDropdown.Divider />*/}
+                            {/*<NavDropdown.Item href="#action5">*/}
+                            {/*    Something else here*/}
+                            {/*</NavDropdown.Item>*/}
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
-  }
 }
 
 export default Navigation;
