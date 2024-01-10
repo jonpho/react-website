@@ -6,7 +6,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "eslint-utils": "3.0.0",
-    "follow-redirects": ">=1.15.2",
+    "follow-redirects": ">=1.15.4",
     "jquery": "^3.6.3",
     "kind-of": ">=6.0.3",
     "lodash": "^4.17.21",
