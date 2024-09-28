@@ -20,8 +20,13 @@ class Elect extends React.Component {
             <p className="text-left">My goal would be to find ways to attract more businesses to keep up with our steady growth while being smart with our taxes and keeping it low.
               It’s a balancing act that I believe our council has done a great job so far with and it would be honor in the up coming years to be a part of.
               But the most important part of all of this is keeping our friendly small town feel.
-              If you have any questions please feel free to reach out on my <a href='https://www.facebook.com/JonathanPhoForCityCouncil'>Facebook Page</a> or email me and we can find a time to chat.
             </p>
+            <h5 className="text-left">For More Information:</h5>
+            <p className="text-left">Please feel free to listen in on my podcast interview with The Hub News. Or checkout my Facebook Campaign Page and I encourage you to follow and like my posts there. Please also feel free to reach out to me on there.</p>
+            <ul>
+              <li><a href="https://www.thehubnewsmn.com/p/the-hub-podcast-3-jordan-city-council">Podcast Interview with The Hub News</a></li>
+                <li><a href="https://www.facebook.com/JonathanPhoForCityCouncil">Facebook Campaign Page</a></li>
+            </ul>
             <p className="text-left">Best Regards,<br />
               Jonathan Pho
             </p>
