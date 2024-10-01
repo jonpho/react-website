@@ -15,15 +15,18 @@ function Navigation() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#action1">Home</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/issues">Issues</Nav.Link>
                         <NavDropdown title="Social Media" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="https://github.com/jonpho">GitHub</NavDropdown.Item>
+                            <NavDropdown.Item href="https://www.facebook.com/JonathanPhoForCityCouncil">Facebook</NavDropdown.Item>
                             <NavDropdown.Item href="https://www.linkedin.com/in/jonpho">LinkedIN</NavDropdown.Item>
+                            <NavDropdown.Item href="https://github.com/jonpho">GitHub</NavDropdown.Item>
                             {/*<NavDropdown.Divider />*/}
                             {/*<NavDropdown.Item href="#action5">*/}
                             {/*    Something else here*/}
                             {/*</NavDropdown.Item>*/}
                         </NavDropdown>
+                        <Nav.Link mailto="jonpho@gmail.com">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
