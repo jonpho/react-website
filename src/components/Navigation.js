@@ -26,7 +26,6 @@ function Navigation() {
                             {/*    Something else here*/}
                             {/*</NavDropdown.Item>*/}
                         </NavDropdown>
-                        <Nav.Link mailto="jonpho@gmail.com">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
