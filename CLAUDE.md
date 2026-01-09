@@ -82,6 +82,29 @@ Reusable components for different sections of the website:
 - **Updating styles**: Modify [App.css](src/App.css) or [index.css](src/index.css)
 - **Adding images**: Place in [src/images/](src/images/) and import in components
 
+## Deployment
+
+### Netlify Configuration
+- **Site**: gallant-shockley-2b4d61
+- **Production URL**: https://www.jonathanpho.com
+- **Build Command**: `npm run build`
+- **Publish Directory**: `build`
+
+### Known Issues
+**Netlify Dashboard Settings vs netlify.toml**:
+- There may be a configuration conflict in the Netlify dashboard where the base directory is set to `build` instead of the project root
+- The [netlify.toml](netlify.toml) file explicitly sets `base = "."` to work around this
+- **ACTION NEEDED**: Check Netlify dashboard settings (Site Settings > Build & Deploy > Build Settings) and ensure:
+  - Base directory is either empty or set to `.` (not `build`)
+  - Build command: `npm run build`
+  - Publish directory: `build`
+- If dashboard settings are corrected, the `base = "."` line in netlify.toml may become redundant but won't cause issues
+
+### Build Process
+- Vite automatically copies files from [public/](public/) directory to [build/](build/) during build
+- The [build/](build/) directory is git-ignored (only [build/.gitkeep](build/.gitkeep) is tracked)
+- Netlify generates the build folder on their servers during deployment
+
 ## Important Considerations
 - This is a learning project, so code quality may vary
 - Maintain existing Bootstrap styling patterns when making changes
