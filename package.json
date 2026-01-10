@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://www.jonathanpho.com",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "bootstrap": "^5.2.3",
     "eslint-utils": "3.0.0",
