@@ -1,24 +1,15 @@
 import Navigation from "../components/Navigation";
-import Jumbotron from "../components/Jumbotron";
-import Elect from "../components/Elect";
+import Hero from "../components/Hero";
+import About from "../components/About";
 import Footer from "../components/Footer";
-import React from "react";
 
 function Home() {
     return (
-        <div className="App">
-            <div>
-                <Navigation/>
-            </div>
-            <div>
-                <Jumbotron/>
-            </div>
-            <div className="section">
-                <Elect/>
-            </div>
-            <div className="section">
-                <Footer/>
-            </div>
+        <div className="bg-slate-900 min-h-screen">
+            <Navigation />
+            <Hero />
+            <About />
+            <Footer />
         </div>
     );
 }

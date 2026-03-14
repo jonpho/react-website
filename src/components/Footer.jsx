@@ -1,25 +1,13 @@
-import React from 'react';
-
-class Footer extends React.Component {
-
-  currentYear() {
-    const date = new Date();
-    return date.getFullYear();
-  }
-
-  render() {
+function Footer() {
     return (
-      <div className="section-footer text-left">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <p>Copyright {this.currentYear()}</p>
+        <footer className="bg-slate-900 border-t border-slate-800 py-8 px-4">
+            <div className="max-w-6xl mx-auto text-center">
+                <p className="text-slate-500 font-mono text-sm">
+                    Designed & Built by <span className="text-cyan-400">Jonathan Pho</span> · {new Date().getFullYear()}
+                </p>
             </div>
-          </div>
-        </div>
-      </div>
+        </footer>
     );
-  }
 }
 
 export default Footer;
