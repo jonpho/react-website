@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 function Navigation() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -8,8 +9,9 @@ function Navigation() {
         <nav className="fixed top-0 w-full z-50 bg-slate-900/90 backdrop-blur-sm border-b border-slate-800">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    <Link to="/" className="text-cyan-400 font-bold text-xl font-mono">
-                        Jonathan Pho
+                    <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                        <Logo />
+                        <span className="text-white font-semibold text-sm hidden sm:block">Jonathan Pho</span>
                     </Link>
 
                     <div className="hidden md:flex items-center space-x-8">
