@@ -9,7 +9,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
     "eslint-utils": "3.0.0",
-    "follow-redirects": ">=1.15.6",
+    "follow-redirects": ">=1.16.0",
     "kind-of": ">=6.0.3",
     "minimist": ">=1.2.7",
     "nanoid": ">=4.0.0",
